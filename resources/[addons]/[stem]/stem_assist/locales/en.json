@@ -1,0 +1,5 @@
+{
+    "assistance_required_notification_title": "Staff Assistance Required! Open assist menu for more information",
+    "assistance_required_notification_description": "**Player**: %s (%s). **Description**: %s",
+    "assistance_already_requested": "You already have a assist active."
+}

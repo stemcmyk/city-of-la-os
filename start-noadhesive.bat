@@ -1,0 +1,1 @@
+..\..\no-adhesive\FXServer.exe +set sv_lan 1 +set txDataPath .\txData +set serverProfile local

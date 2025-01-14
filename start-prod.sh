@@ -1,0 +1,1 @@
+../../run.sh +set txDataPath ./txData +set serverProfile production

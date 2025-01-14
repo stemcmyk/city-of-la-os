@@ -1,0 +1,1 @@
+	['xphone'] 			 		 = {['name'] = 'xphone', 						['label'] = 'xPhone', 				['weight'] = 25, 		['type'] = 'item', 		['image'] = 'xphone.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = true,   ['description'] = 'A suspicious phone running a custom OS'},

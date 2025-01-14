@@ -1,0 +1,1 @@
+..\..\FXServer.exe +set txDataPath .\txData +set serverProfile local

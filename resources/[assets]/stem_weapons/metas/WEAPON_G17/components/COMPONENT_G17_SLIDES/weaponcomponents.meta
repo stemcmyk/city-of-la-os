@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CWeaponComponentInfoBlob>
+	<Infos>
+		<Item type="CWeaponComponentScopeInfo">
+			<Name>COMPONENT_G17_SLIDE_01</Name>
+			<Model>mm_g17_slide1</Model>
+			<LocName>WCT_SLIDE_1</LocName>
+			<LocDesc>WCD_INVALID</LocDesc>
+			<AttachBone>AAPSlide</AttachBone>
+			<WeaponAttachBone>WAPScop_2</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="false"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+		</Item>
+		<Item type="CWeaponComponentScopeInfo">
+			<Name>COMPONENT_G17_SLIDE_02</Name>
+			<Model>mm_g17_slide2</Model>
+			<LocName>WCT_SLIDE_1</LocName>
+			<LocDesc>WCD_INVALID</LocDesc>
+			<AttachBone>AAPSlide</AttachBone>
+			<WeaponAttachBone>WAPScop_2</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="false"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+		</Item>
+		<Item type="CWeaponComponentScopeInfo">
+			<Name>COMPONENT_G17_SLIDE_03</Name>
+			<Model>mm_g17_slide3</Model>
+			<LocName>WCT_SLIDE_1</LocName>
+			<LocDesc>WCD_INVALID</LocDesc>
+			<AttachBone>AAPSlide</AttachBone>
+			<WeaponAttachBone>WAPScop_2</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="false"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+		</Item>
+		<Item type="CWeaponComponentScopeInfo">
+			<Name>COMPONENT_G17_SLIDE_04</Name>
+			<Model>mm_g17_slide4</Model>
+			<LocName>WCT_SLIDE_1</LocName>
+			<LocDesc>WCD_INVALID</LocDesc>
+			<AttachBone>AAPSlide</AttachBone>
+			<WeaponAttachBone>WAPScop_2</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="false"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+		</Item>
+		<Item type="CWeaponComponentScopeInfo">
+			<Name>COMPONENT_G17_SLIDE_05</Name>
+			<Model>mm_g17_slide5</Model>
+			<LocName>WCT_SLIDE_1</LocName>
+			<LocDesc>WCD_INVALID</LocDesc>
+			<AttachBone>AAPSlide</AttachBone>
+			<WeaponAttachBone>WAPScop_2</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="false"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+		</Item>
+		<Item type="CWeaponComponentScopeInfo">
+			<Name>COMPONENT_G17_SLIDE_06</Name>
+			<Model>mm_g17_slide6</Model>
+			<LocName>WCT_SLIDE_1</LocName>
+			<LocDesc>WCD_INVALID</LocDesc>
+			<AttachBone>AAPSlide</AttachBone>
+			<WeaponAttachBone>WAPScop_2</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="false"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+		</Item>
+		<Item type="CWeaponComponentScopeInfo">
+			<Name>COMPONENT_G17_SLIDE_07</Name>
+			<Model>mm_g17_slide7</Model>
+			<LocName>WCT_SLIDE_1</LocName>
+			<LocDesc>WCD_INVALID</LocDesc>
+			<AttachBone>AAPSlide</AttachBone>
+			<WeaponAttachBone>WAPScop_2</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="false"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+		</Item>
+		<Item type="CWeaponComponentScopeInfo">
+			<Name>COMPONENT_G17_SLIDE_08</Name>
+			<Model>mm_g17_slide8</Model>
+			<LocName>WCT_SLIDE_1</LocName>
+			<LocDesc>WCD_INVALID</LocDesc>
+			<AttachBone>AAPSlide</AttachBone>
+			<WeaponAttachBone>WAPScop_2</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="false"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+		</Item>
+		<Item type="CWeaponComponentScopeInfo">
+			<Name>COMPONENT_G17_SLIDE_09</Name>
+			<Model>mm_g17_slide9</Model>
+			<LocName>WCT_SLIDE_1</LocName>
+			<LocDesc>WCD_INVALID</LocDesc>
+			<AttachBone>AAPSlide</AttachBone>
+			<WeaponAttachBone>WAPScop_2</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="false"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+		</Item>
+	</Infos>
+	<InfoBlobName/>
+</CWeaponComponentInfoBlob>
+

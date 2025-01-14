@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SInteriorOrderData>
+  <startFrom value="7000" />
+  <filePathHash value="0" />
+  <proxies>
+    <!--Item>v_pizza_mp_placement</Item-->
+    <Item>e_49_church_int_milo_</Item>
+    <Item>ch1_occl_01</Item>
+  </proxies>
+</SInteriorOrderData>

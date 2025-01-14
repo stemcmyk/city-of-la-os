@@ -1,0 +1,19 @@
+{
+  "runtime.version": "Lua 5.4",
+  "format.defaultConfig": {
+    "indent_style": "space",
+    "indent_size": "2"
+  },
+  "diagnostics.disable": [
+      "undefined-global",
+      "missing-parameter",
+      "lowercase-global",
+      "undefined-doc-name",
+      "undefined-field",
+      "unicode-name"
+  ],
+  "diagnostics.globals": [
+    "use_backticks",
+    "variable"
+  ]
+}

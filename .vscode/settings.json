@@ -1,0 +1,20 @@
+{
+  "Lua.diagnostics.globals": ["data_file"],
+  "editor.formatOnPaste": false, // required
+  "editor.formatOnType": false, // required
+  "editor.formatOnSave": true, // optional
+  "editor.formatOnSaveMode": "file", // required to format on save
+  "files.autoSave": "onFocusChange",
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // optional but recommended
+  "Lua.diagnostics.disable": [
+    "undefined-global",
+    "missing-parameter",
+    "lowercase-global"
+  ],
+  "Lua.runtime.nonstandardSymbol": [
+    "`"
+  ],
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
+}

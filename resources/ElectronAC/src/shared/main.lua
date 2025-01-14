@@ -1,0 +1,1 @@
+local a=GetCurrentResourceName()local b={}function encodeEvent(c)local d=64;local e=0;if b[c]then return b[c]end;local f=c..a;for g=1,#f do local h=string.sub(f,g,g)e=e+string.byte(h)*g+string.byte(h)end;math.randomseed(e)local i=''for g=1,d do i=i..string.char(math.random(97,122))end;b[c]=i;return i end

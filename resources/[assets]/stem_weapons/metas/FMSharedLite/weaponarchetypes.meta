@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF - 8"?>
+
+<CWeaponModelInfo__InitDataList>
+	<InitDatas>		
+		<Item>
+			<modelName>fmlitescope_01</modelName>
+			<txdName>fmlitescope_01</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>fmlitescope_02</modelName>
+			<txdName>fmlitescope_02</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>	
+		<Item>
+			<modelName>fmlitescope_03</modelName>
+			<txdName>fmlitescope_03</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>			
+		<Item>
+			<modelName>fmlitescope_04</modelName>
+			<txdName>fmlitescope_04</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>fmlitescope_05</modelName>
+			<txdName>fmlitescope_05</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>fmlitescope_06</modelName>
+			<txdName>fmlitescope_06</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>fmlitescope_06</modelName>
+			<txdName>fmlitescope_06</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>fmlitescope_07</modelName>
+			<txdName>fmlitescope_07</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>fmlitescope_08</modelName>
+			<txdName>fmlitescope_08</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>fmlitescope_09</modelName>
+			<txdName>fmlitescope_08</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>fmlitescope_10</modelName>
+			<txdName>fmlitescope_10</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>fmlitescope_11</modelName>
+			<txdName>fmlitescope_10</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>fmlitescope_12</modelName>
+			<txdName>fmlitescope_12</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>					
+		<Item>
+			<modelName>fmliteclip_01</modelName>
+			<txdName>fmliteclip_01</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>fmliteclip_02</modelName>
+			<txdName>fmliteclip_02</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>fmliteclip_03</modelName>
+			<txdName>fmliteclip_03</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>fmliteclip_04</modelName>
+			<txdName>fmliteclip_04</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>fmliteclip_05</modelName>
+			<txdName>fmliteclip_05</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>fmliteclip_06</modelName>
+			<txdName>fmliteclip_06</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>fmliteclip_07</modelName>
+			<txdName>fmliteclip_07</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>	
+		<Item>
+			<modelName>fmlitesupp_01</modelName>
+			<txdName>fmlitesupp_01</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>	
+		<Item>
+			<modelName>fmlitesupp_02</modelName>
+			<txdName>fmlitesupp_02</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>			
+	</InitDatas>
+</CWeaponModelInfo__InitDataList>
+

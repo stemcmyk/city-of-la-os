@@ -1,0 +1,21 @@
+[
+  {
+    "name": "stemcmyk",
+    "master": true,
+    "password_hash": "$2a$11$K/Iuu7ZvHpPdbPez3exb7eiDhFbPhmzTTnC7AVIypbEM88kItQCbG",
+    "providers": {
+      "citizenfx": {
+        "id": "stemcmyk",
+        "identifier": "fivem:421489",
+        "data": {
+          "sub": "7a6b60b06667cb93874ba77a5c08793c",
+          "nameid": "https://forum.cfx.re/internal/user/421489",
+          "name": "stemcmyk",
+          "picture": "https://forum.cfx.re/user_avatar/forum.cfx.re/stemcmyk/256/3781344_2.png",
+          "profile": "https://forum.cfx.re/u/stemcmyk"
+        }
+      }
+    },
+    "permissions": []
+  }
+]

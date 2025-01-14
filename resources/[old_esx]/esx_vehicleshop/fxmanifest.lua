@@ -1,0 +1,6 @@
+fx_version 'cerulean'
+game 'gta5'
+lua54 'yes'
+description 'Allows Players to buy & sell vehicles'
+version '1.0'
+legacyversion '1.9.1'

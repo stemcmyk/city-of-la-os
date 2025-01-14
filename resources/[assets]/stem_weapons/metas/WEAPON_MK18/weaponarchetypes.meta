@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CWeaponModelInfo__InitDataList>
+	<InitDatas>
+		<Item>
+			<modelName>mk18</modelName>
+			<txdName>mk18</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_frame1</modelName>
+			<txdName>mk18_frames</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_frame2</modelName>
+			<txdName>mk18_frames</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_frame3</modelName>
+			<txdName>mk18_frames</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_mag1</modelName>
+			<txdName>mk18_mags</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_mag2</modelName>
+			<txdName>mk18_mags</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_mag3</modelName>
+			<txdName>mk18_mags</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_mag4</modelName>
+			<txdName>mk18_mags</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_mag5</modelName>
+			<txdName>mk18_mags</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_mag6</modelName>
+			<txdName>mk18_mags</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_mag7</modelName>
+			<txdName>mk18_mags</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_flash1</modelName>
+			<txdName>mk18_flashlights</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_flash2</modelName>
+			<txdName>mk18_flashlights</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_flash3</modelName>
+			<txdName>mk18_flashlights</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_flash4</modelName>
+			<txdName>mk18_flashlights</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_flash5</modelName>
+			<txdName>mk18_flashlights</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_flash6</modelName>
+			<txdName>mk18_flashlights</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_flash7</modelName>
+			<txdName>mk18_flashlights</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_scope1</modelName>
+			<txdName>mk18_scopes</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_scope2</modelName>
+			<txdName>mk18_scopes</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_scope3</modelName>
+			<txdName>mk18_scopes</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_scope4</modelName>
+			<txdName>mk18_scopes</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_scope5</modelName>
+			<txdName>mk18_scopes</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_scope6</modelName>
+			<txdName>mk18_scopes</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_scope7</modelName>
+			<txdName>mk18_scopes</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_scope8</modelName>
+			<txdName>mk18_scopes</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_scope9</modelName>
+			<txdName>mk18_scopes</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_suppressor1</modelName>
+			<txdName>mk18_suppressors</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_suppressor2</modelName>
+			<txdName>mk18_suppressors</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_suppressor3</modelName>
+			<txdName>mk18_suppressors</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_suppressor4</modelName>
+			<txdName>mk18_suppressors</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_suppressor5</modelName>
+			<txdName>mk18_suppressors</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_suppressor6</modelName>
+			<txdName>mk18_suppressors</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_grip1</modelName>
+			<txdName>mk18_grips</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_grip2</modelName>
+			<txdName>mk18_grips</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_grip3</modelName>
+			<txdName>mk18_grips</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_grip4</modelName>
+			<txdName>mk18_grips</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_grip5</modelName>
+			<txdName>mk18_grips</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_stock1</modelName>
+			<txdName>mk18_stocks</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_stock2</modelName>
+			<txdName>mk18_stocks</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_stock3</modelName>
+			<txdName>mk18_stocks</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_stock4</modelName>
+			<txdName>mk18_stocks</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_stock5</modelName>
+			<txdName>mk18_stocks</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_stock6</modelName>
+			<txdName>mk18_stocks</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>mk18_stock7</modelName>
+			<txdName>mk18_stocks</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+	</InitDatas>
+</CWeaponModelInfo__InitDataList>
+

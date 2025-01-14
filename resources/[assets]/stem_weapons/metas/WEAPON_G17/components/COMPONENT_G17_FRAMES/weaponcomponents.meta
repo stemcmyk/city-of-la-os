@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CWeaponComponentInfoBlob>
+	<Infos>
+		<Item type="CWeaponComponentInfo">
+			<Name>COMPONENT_G17_FRAME_01</Name>
+			<Model>mm_g17_frame01</Model>
+			<LocName>"FRAME"</LocName>
+			<LocDesc>"FRAME"</LocDesc>
+			<AttachBone>AAPStock</AttachBone>
+			<WeaponAttachBone>WAPStock</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="false"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+		</Item>
+		<Item type="CWeaponComponentInfo">
+			<Name>COMPONENT_G17_FRAME_02</Name>
+			<Model>mm_g17_frame02</Model>
+			<LocName>"FRAME"</LocName>
+			<LocDesc>"FRAME"</LocDesc>
+			<AttachBone>AAPStock</AttachBone>
+			<WeaponAttachBone>WAPStock</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="false"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+		</Item>
+		<Item type="CWeaponComponentInfo">
+			<Name>COMPONENT_G17_FRAME_03</Name>
+			<Model>mm_g17_frame03</Model>
+			<LocName>"FRAME"</LocName>
+			<LocDesc>"FRAME"</LocDesc>
+			<AttachBone>AAPStock</AttachBone>
+			<WeaponAttachBone>WAPStock</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="false"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+		</Item>
+		<Item type="CWeaponComponentInfo">
+			<Name>COMPONENT_G17_FRAME_04</Name>
+			<Model>mm_g17_frame04</Model>
+			<LocName>"FRAME"</LocName>
+			<LocDesc>"FRAME"</LocDesc>
+			<AttachBone>AAPStock</AttachBone>
+			<WeaponAttachBone>WAPStock</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="false"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+		</Item>
+		<Item type="CWeaponComponentInfo">
+			<Name>COMPONENT_G17_FRAME_05</Name>
+			<Model>mm_g17_frame05</Model>
+			<LocName>"FRAME"</LocName>
+			<LocDesc>"FRAME"</LocDesc>
+			<AttachBone>AAPStock</AttachBone>
+			<WeaponAttachBone>WAPStock</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="false"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+		</Item>
+	</Infos>
+	<InfoBlobName/>
+</CWeaponComponentInfoBlob>
+

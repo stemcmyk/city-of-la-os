@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CWeaponModelInfo__InitDataList>
+	<InitDatas>
+		<Item>
+			<modelName>mm_g17_mag1</modelName>
+			<txdName>mm_g17_mags</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_slide1</modelName>
+			<txdName>mm_g17_slides</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_slide2</modelName>
+			<txdName>mm_g17_slides</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_slide3</modelName>
+			<txdName>mm_g17_slides</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_slide4</modelName>
+			<txdName>mm_g17_slides</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_slide5</modelName>
+			<txdName>mm_g17_slides</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_slide6</modelName>
+			<txdName>mm_g17_slides</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_slide7</modelName>
+			<txdName>mm_g17_slides</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_slide8</modelName>
+			<txdName>mm_g17_slides</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_slide9</modelName>
+			<txdName>mm_g17_slides</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_mag2</modelName>
+			<txdName>mm_g17_mags</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_mag3</modelName>
+			<txdName>mm_g17_mags</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_mag4</modelName>
+			<txdName>mm_g17_mags</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_mag5</modelName>
+			<txdName>mm_g17_mags</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_frame03</modelName>
+			<txdName>mm_g17</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_frame04</modelName>
+			<txdName>mm_g17</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_frame05</modelName>
+			<txdName>mm_g17</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_frame02</modelName>
+			<txdName>mm_g17</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_frame01</modelName>
+			<txdName>mm_g17</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17</modelName>
+			<txdName>mm_g17</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_barrel1</modelName>
+			<txdName>mm_g17_barrels</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_barrel2</modelName>
+			<txdName>mm_g17_barrels</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_barrel3</modelName>
+			<txdName>mm_g17_barrels</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_barrel4</modelName>
+			<txdName>mm_g17_barrels</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_barrel5</modelName>
+			<txdName>mm_g17_barrels</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_barrel6</modelName>
+			<txdName>mm_g17_barrels</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_barrel7</modelName>
+			<txdName>mm_g17_barrels</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_flash1</modelName>
+			<txdName>mm_g17_flashlights</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_flash2</modelName>
+			<txdName>mm_g17_flashlights</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_flash3</modelName>
+			<txdName>mm_g17_flashlights</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_flash4</modelName>
+			<txdName>mm_g17_flashlights</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_suppressor1</modelName>
+			<txdName>mm_g17_suppressors</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_suppressor2</modelName>
+			<txdName>mm_g17_suppressors</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_suppressor3</modelName>
+			<txdName>mm_g17_suppressors</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_suppressor4</modelName>
+			<txdName>mm_g17_suppressors</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_suppressor5</modelName>
+			<txdName>mm_g17_suppressors</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_suppressor6</modelName>
+			<txdName>mm_g17_suppressors</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_suppressor7</modelName>
+			<txdName>mm_g17_suppressors</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_suppressor8</modelName>
+			<txdName>mm_g17_suppressors</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+		<Item>
+			<modelName>mm_g17_suppressor9</modelName>
+			<txdName>mm_g17_suppressors</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="600"/>
+		</Item>
+	</InitDatas>
+</CWeaponModelInfo__InitDataList>
+

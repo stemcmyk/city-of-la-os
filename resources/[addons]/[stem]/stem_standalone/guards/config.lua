@@ -1,0 +1,302 @@
+-- Config_ArmedGuards = {}
+
+-- Config_ArmedGuards.PoliceJobs = {
+--     ["police"] = true,
+--     ["lspd"] = true,
+--     ["sahp"] = true,
+--     ["lscso"] = true,
+--     ["amr"] = true,
+--     ["judge"] = true,
+--     ["re"] = true
+-- }
+
+-- Config_ArmedGuards.Peds = {
+-- --     {   
+-- --         -- pillbox center
+-- --         position = vector4(315.9, -588.67, 43.28 - 1, 157.18),
+-- --         losRequired = true,
+-- --         interior = true
+-- --     },
+-- --     {
+-- --         position = vector4(332.07, -579.2, 43.28 - 1, 168.63),
+-- --         losRequired = true,
+-- --         interior = true
+-- --     },
+-- --     {
+-- --         position = vector4(305.75, -570.02, 43.28 - 1, 203.59),
+-- --         heading = 162.36,
+-- --         interior = true
+-- --     },
+-- --     {
+-- --         position = vector4(324.03, -585.08, 43.28 - 1, 67.12),
+-- --         losRequired = true,
+-- --         interior = true
+-- --     },
+-- --     {
+-- --         position = vector3(300.32, -579.65, 43.26 - 1),
+-- --         heading = 73.18,
+-- --         distance = 100.0,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+-- --     {
+-- --         position = vector3(290.89, -616.12, 43.44 - 1),
+-- --         heading = 28.1,
+-- --         distance = 100.0,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+-- --     {
+-- --         position = vector3(271.84, -612.17, 42.88 - 1),
+-- --         heading = 10.84,
+-- --         distance = 100.0,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+-- --     {
+-- --         position = vector4(356.31, -593.42, 28.78 - 1, 253.07),
+-- --         distance = 100.0,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+-- --     {
+-- --         position =  vector4(350.18, -585.9, 43.28 - 1, 247.69),
+-- --         distance = 100.0,
+-- --         losRequired = true,
+-- --         interior = true
+-- --     },
+    
+   
+-- --     {
+-- --         -- ZONAH
+-- --         position = vector3(-449.7, -360.22, 32.66),
+-- --         heading = 167.85,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+-- --     {
+-- --         position = vector3(-450.09, -352.79, 33.50),
+-- --         heading = 34.44,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+-- --     {
+-- --         -- PDM
+-- --         position = vector3(-53.12, -1104.02, 25.44),
+-- --         heading = 156.81,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+-- --     {
+-- --         position = vector3(244.41, -43.38, 68.9),
+-- --         heading = 78.9,
+-- --         distance = 50.0,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+-- --     {
+-- --         position = vector3(-1315.54, -393.11, 35.59),
+-- --         heading = 71.46,
+-- --         distance = 45.0,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+-- --     {
+-- --         -- SANDY HOSPITAL
+-- --         position = vector3(1841.30, 3675.06, 33.28),
+-- --         heading = 208.0,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+-- --     {
+-- --         -- SANDY GUNSTORE
+-- --         position = vector3(1701.53, 3754.42, 33.35),
+-- --         heading = 217.73,
+-- --         distance = 25.0,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+
+-- --     {
+-- --         -- 60
+-- --         position = vector3(816.79, -2114.56, 28.38),
+-- --         heading = 173.85,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+-- --     {
+-- --         -- 200
+-- --         position = vector4(15.49, -1114.79, 29.79 - 1, 168.18),
+-- --         distance = 50.0,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+-- --     {
+-- --         -- 200
+-- --         position = vector3(8.25, -1099.16, 28.79),
+-- --         heading = 158.67,
+-- --         losRequired = true,
+-- --         interior = true
+-- --     },
+-- --     {
+-- --         -- 3007
+-- --         position = vector3(-326.07, 6074.53, 30.24 ),
+-- --         heading = 223.22,
+-- --         distance = 25.0,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+-- --     {
+-- --         -- Paleto Hospital
+-- --         position = vector3(-256.72, 6334.35, 31.43),
+-- --         heading = 222.63,
+-- --         losRequired = true,
+-- --         interior = true
+-- --     },
+-- --     {
+-- --         -- Paleto Hospital
+-- --         position = vector3(-239.56, 6338.01, 31.53),
+-- --         heading = 161.02,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+-- --     {
+-- --         -- PDM Interior
+-- --         position = vector3(-33.89, -1106.47, 25.42),
+-- --         heading = 68.16,
+-- --         losRequired = true,
+-- --         interior = true
+-- --     },
+
+-- --     {
+-- --         -- 178 garage
+-- --         position = vector3(1170.84, -1527.71, 33.84),
+-- --         heading = 87.41,
+-- --         distance = 50.0,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+-- --     {
+-- --         -- 178 garage
+-- --         position = vector3(1162.89, -1463.79, 33.84),
+-- --         heading = 34.94,
+-- --         distance = 50.0,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+-- --     {
+-- --         -- 149 garage
+-- --         position = vector3(349.65, -1468.46, 28.32),
+-- --         heading = 180.22,
+-- --         distance = 25.0,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+-- --     {
+-- --         -- 149 garage
+-- --         position = vector3(309.65, -1435.65, 28.96),
+-- --         heading = 132.03,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+-- --     {
+-- --         -- 149 garage
+-- --         position = vector3(289.67, -1417.58, 28.95),
+-- --         heading = 82.01,
+-- --         distance = 40.0,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+-- --     {
+-- --         -- 149 garage
+-- --         position = vector3(335.21, -1432.18, 45.51),
+-- --         heading = 137.37,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+-- --     {
+-- --         -- 149 garage
+-- --         position = vector3(305.77, -1348.99, 30.96),
+-- --         heading = 230.65,
+-- --         distance = 50.0,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+-- --     {
+-- --         -- 149 garage
+-- --         position = vector3(244.14, -1422.91, 28.34),
+-- --         heading = 186.96,
+-- --         distance = 50.0,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+-- --     {
+-- --         -- 366
+-- --         position = vector3(-665.63, -945.12, 20.79),
+-- --         heading = 190.08,
+-- --         distance = 25.0,
+-- --         losRequired = true,
+-- --         interior = 0
+-- --     },
+-- --     {
+-- --         model = `s_m_y_sheriff_01`,
+-- --         position = vector3(-581.19, -208.95, 37.23),
+-- --         heading = 298.50,
+-- --         losRequired = true,
+-- --         interior = true
+-- --     },
+-- --     {
+-- --         model = `s_m_y_ammucity_01`,
+-- --         position = vector4(23.3396, -1105.384, 28.797, 142.4851),
+-- --         losRequired = true,
+-- --         interior = true
+-- --     },
+-- --     {
+-- --         model = `s_m_y_ammucity_01`,
+-- --         position = vector4(-332.79, 6084.34, 30.45, 223.63),
+-- --         losRequired = true,
+-- --         interior = true
+-- --     },
+-- --     {
+-- --         model = `s_m_y_ammucity_01`,
+-- --         position = vector4(254.75, -49.32, 68.94, 69.42),
+-- --         losRequired = true,
+-- --         interior = true
+-- --     },
+-- --     {
+-- --         model = `s_m_y_ammucity_01`,
+-- --         position = vector4(-1120.41, 2699.11, 17.55, 218.31),
+-- --         losRequired = true,
+-- --         interior = true
+-- --     },
+-- --     {
+-- --         model = `s_m_y_ammucity_01`,
+-- --         position = vector4(-663.20, -933.32, 20.83, 177.84),
+-- --         losRequired = true,
+-- --         interior = true
+-- --     },
+-- --     {
+-- --         model = `s_m_y_ammucity_01`,
+-- --         position = vector4(2569.31, 292.19, 107.73, 1.31),
+-- --         losRequired = true,
+-- --         interior = true
+-- --     },
+-- --     {
+-- --         model = `s_m_y_ammucity_01`,
+-- --         position = vector4(843.77, -1035.67, 27.19, 358.45),
+-- --         losRequired = true,
+-- --         interior = true
+-- --     },
+-- --     {
+-- --         model = `s_m_y_ammucity_01`,
+-- --         position = vector4(-1303.35, -392.97, 35.7, 74.68),
+-- --         losRequired = true,
+-- --         interior = true
+-- --     },
+-- --     {
+-- --         model = `s_m_y_ammucity_01`,
+-- --         position = vector4(1692.54, 3761.85, 33.71 + 1, 225.44),
+-- --         losRequired = true,
+-- --         interior = true
+-- --     },
+-- }

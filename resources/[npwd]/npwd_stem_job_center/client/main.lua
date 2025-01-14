@@ -1,0 +1,17 @@
+RegisterNUICallback("npwd:stem_job_center:getJobs", function(data, cb)
+    ESX.TriggerServerCallback("npwd:stem_job_center:getJobs", function (data)
+        cb({ status = "ok", data = data })
+    end)
+end)
+
+RegisterNUICallback("npwd:stem_job_center:getJob", function(data, cb)
+    ESX.TriggerServerCallback("npwd:stem_job_center:getJob", function (data)
+        cb({ status = "ok", data = data })
+    end)
+end)
+
+RegisterNUICallback("npwd:stem_job_center:setJob", function (data, cb)
+    ESX.TriggerServerCallback("npwd:stem_job_center:setJob", function (ok)
+        cb({ status = "ok", data = ok })
+    end, data)
+end)

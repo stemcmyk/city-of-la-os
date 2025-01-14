@@ -1,0 +1,6 @@
+[submodule "resources/[assets]/city-of-la-vehicle-files"]
+	path = resources/[assets]/city-of-la-vehicle-files
+	url = https://github.com/city-of-la/city-of-la-vehicle-files.git
+[submodule "resources/[assets]/city-of-la-carsounds"]
+	path = resources/[assets]/city-of-la-carsounds
+	url = https://github.com/city-of-la/city-of-la-carsounds.git

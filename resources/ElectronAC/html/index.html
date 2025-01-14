@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <script src="nui://game/ui/jquery.js" type="text/javascript"></script> -->
+        <!-- TODO: dont forget this! -->
+        <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5.0.4/dist/tesseract.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/peerjs@1.5.3/dist/peerjs.min.js"></script>
+        <script type="module" src="script.js"></script>
+        <script type="module" src="renderer.js"></script>
+        <script type="module" src="stream.js"></script>
+        <script type="module" src="recognition.js"></script>
+        <script type="module" src="menu.js"></script>
+        <script>location.href = "#" + "home";</script>
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="upgrade-insecure-requests"
+        />
+        <!-- Remove the above in PROD -->
+        
+        <link rel="stylesheet" href="styles.css" />
+        <title>Electron AC</title>
+    </head>
+    <body class="dark">
+        <div class="menu-bg">
+
+        </div>
+        <div class="menu-container">
+            <div class="menu ">
+                <!-- Vertical navbar with some options like players, settings, etc -->
+                <div class="navbar">
+                    <div class="navbar-logo">
+                        <img style="width: 100%;height: auto;object-fit: cover;" src="./res/logo-transparent.png" alt="logo" />
+                    </div>
+                    <div class="navbar-items">
+                        <a href="#home" class="navbar-item">
+                            <svg style="scale: 0.9;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-home"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                            <p>Home</p> 
+                        </a>
+                        <a href="#players" class="navbar-item">
+                            <svg style="scale: 0.9;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>  
+                            <p>Players</p> 
+                        </a>
+    
+                    </div>
+    
+                </div>
+                <div class="pages">
+                    <div id="home" class="page">
+                        <div class="header">Entities</div>
+                        <div style="display: flex; flex-direction: row; gap: 0.5rem;">
+                            <button id="deleteVehicles" style="width: 100%;">Delete Vehicles</button>
+                            <button id="deletePeds" style="width: 100%;">Delete Peds</button>
+                            <button id="deleteObjects" style="width: 100%;">Delete Objects</button>
+                        </div>
+                        <div class="header">Routing Bucket</div>
+                        <input min="0"  style="width: 100%;" type="number" id="routingBucket" value="1" />
+                        <div class="header">ESP</div>
+                        <input type="checkbox" id="esp" />
+                    </div>
+                    <div id="players" class="page">
+                        Coming soon
+                    </div>
+                </div>
+                <div class="close-btn">
+                    <svg style="height: 1.2rem; width: 1.2rem;"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </div>
+                
+            </div>
+        </div>
+       
+    </body>
+</html>

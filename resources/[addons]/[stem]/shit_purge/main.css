@@ -1,0 +1,36 @@
+body{
+    margin: auto;
+    padding: 48px;
+}
+@font-face {
+    font-family: 'EAS_TITLE'; /*a name to be used later*/
+    src: url('fonts/VCR_OSD_MONO.ttf'); /*URL to font*/
+}
+
+.eas {
+    z-index: 20;
+    margin: 48px;
+    font-family: 'EAS_TITLE';
+    height: 30vh;
+    margin: auto;
+    text-align: center;
+    font-size: 120%;
+    color: #fff;
+    border-top: 4px solid red;
+    border-bottom: 4px solid red;
+    border-left: 4px solid red;
+    border-right: 4px solid red;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px
+}
+.eas .eas_title {
+    font-size: 48px;
+    border-bottom: 2px solid red;
+}
+.eas .issuer {
+    font-size: 32px;
+}

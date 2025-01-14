@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="vehicle_recall">
+        <h1>VEHICLE RECALL NOTICE</h1>
+        <h2>WARNING</h2>
+        <h3>One or more vehicles that you own are under recall.</h3>
+
+        <h4>AFFECTED VEHICLES</h4>
+        <div class="vehicle_list">
+            <table id="vehicle_table">
+                <tr>
+                    <th>Vehicle</th>
+                    <th>License Plate</th>
+                    <th>Registration Date</th>
+                    <th>Status</th>
+                </tr>
+            </table>
+        </div>
+
+        <h4>POSSIBLE REASONS FOR THIS RECALL</h4>
+        <p>Vehicles can be recalled for the following reasons: </p>
+        <ul>
+            <li>Significant body and visual defects caused by the manufacturer that cannot be easily fixed</li>
+            <li>Cosmetic issues that cause people to see artifacts or flickering when standing nearby</li>
+            <li>Model is oversized and has a polygon or vertices count that exceeds normal limits* (L0 of 200k+).</li>
+        </ul>
+
+        <h4>WHAT DOES THIS MEAN?</h4>
+        <p>You are receiving this notice because you are the registered owner of one or more vehicle(s) listed above.
+            Please review the entire notice letter in full and take the recommended actions.
+        </p>
+
+        <h4>RECOMMENDED ACTION</h4>
+        <p>Vehicles under recall are subject to a complete removal a minimum of <b>14 days</b> from the initial recall
+            date. If you are receiving this notice, please return the vehicles listed above to the dealership
+            immediately. This can be done in the purple parking circle behind PDM: 200 Adams Apple Blvd.
+            Currently,
+            the residual value on recalled vehicles is <b>70%</b> for ones originally purchased as a supporter vehicle,
+            and <b>50%</b> for non-supporter vehicles. This figure is subject to change at the sole
+            discretion of
+            the recall authority. <u>Failure to return the vehicle within the recommended
+                time frame will result in a complete loss of the vehicle with no recourse for the registered
+                owner.</u>
+        </p>
+
+        <h4>WHY IS 'X' VEHICLE BEING RECALLED?</h4>
+        <p>Over the past few
+            months, there have been numerous complaints of freezes, frame drops, hangs, stuttering, and
+            other <i>client</i> performance issues in populated areas with a lot of player owned vehicles. These issues
+            are unacceptable and are being addressed with the recall system. One of our top priorities is to provide the
+            smoothest experience for everyone regardless
+            of any hardware considerations. The goal is
+            to slowly reduce the number of
+            problematic vehicles on the road, which will lead to a noticeable improvement in player experience over
+            time.
+            Note that these improvements will be gradual and manifest over the long run, when the number of recalled
+            vehicles gets reduced to zero.
+        </p>
+
+        <h4>CAN A RECALLED VEHICLE BE TRADED IN FOR ANOTHER VEHICLE AT THE DEALERSHIP?</h4>
+        <p>No. Vehicles that are under recall cannot be exchanged as the issue is with the vehicle model itself being
+            defective or oversized. Recall costs are covered by the federal government and are not issued by the
+            dealership.</p>
+
+        <h4>DO I NEED SUPPORTER STATUS TO RETURN A RECALLED VEHICLE?</h4>
+        <p>No. Vehicles under recall can be sold back to PDM regardless of supporter status or whether the vehicle was
+            originally purchased as a supporter vehicle. This is done to ensure everyone has a fair chance to return
+            recalled vehicles..</p>
+
+        <h4>IS THERE ANYTHING ELSE THAT CAN BE DONE INSTEAD?</h4>
+        <p>No. Vehicles that are under recall cannot be registered, sold, or transferred to other players. The recall
+            system was
+            introduced to provide a fair and uniform process for anyone who owns a recalled
+            vehicle. Do <b>NOT</b> attempt to contact the recall authority or any government officials, there is
+            nothing that can be done on an individual basis.</p>
+
+        <hr>
+
+        <p class="disclaimer">* See https://www.modding-forum.com/guide/1-lod-models/ for more information.</p>
+    </div>
+
+    <div class="comserv_notice">
+        <h2>Press <strong>ESC</strong> to close</h2>
+        <h1>COMMUNITY SERVICE ISSUED</h1>
+        <h2>NOTICE</h2>
+        <h3>You were issued community service as a punishment by the staff team.</h3>
+
+        <h4>REASON FOR COMMUNITY SERVICE</h4>
+        <p>You were issued community service for the following reason: </p>
+        <p id="comserv_reason"></p>
+
+        <h4>WHAT IS COMMUNITY SERVICE?</h4>
+        <p>The staff team can, at their discretion, issue community service to players found in violation of the server
+            rules. </p>
+
+        <h4>WHO HAS THE AUTHORITY TO ISSUE COMMUNITY SERVICE?</h4>
+        <p>Community service can be issued by any staff member (regardless of job) or a whitelisted job holder, provided
+            they are on duty and within the limits of their job. If you are receiving this notice, your sentence was
+            issued by the staff team -- NOT by a whitelisted job. Community service issued by a whitelisted job is
+            considered a non-staff punishment and does not appear on your record.</p>
+
+        <h4>HOW DO I COMPLETE MY SERVICE?</h4>
+        <p>Players who are issued community service must complete actions by sweeping the beach. One month is equal to
+            one action of service. Find the appropriate locations and follow the instructional message.
+        </p>
+
+        <h4>I BELIEVE THIS WAS INCORRECTLY ISSUED. WHAT RECOURSE DO I HAVE?</h4>
+        <p>If you believe this was issued in error, open a #create-ticket on Discord (discord.gg/cityofla) and explain your
+            reasoning. Do NOT place assists regarding your community service or you will be assist blacklisted. Copy and
+            paste the entire contents of this notice when submitting an appeal to reduce or remove your sentence.</p>
+    </div>
+
+    <div class="wnews_publish">
+        <div>
+            <h2>Weazel News Publication</h2>
+            <input id="page1" type="text" placeholder='Front Page URL'><br>
+            <input id="page2" type="text" placeholder='Page 2 URL'><br>
+            <input id="page3" type="text" placeholder='Page 3 URL'><br>
+            <input id="page4" type="text" placeholder='Page 4 URL'><br>
+            <input id="page5" type="text" placeholder='Page 5 URL'><br>
+            <input id="page6" type="text" placeholder='Page 6 URL'><br>
+            <br>
+        </div>
+
+        <div>
+            <button id="wnews_submit" type="submit">Submit</button>
+        </div>
+    </div>
+
+    <div class="mdt">
+        <iframe id="mdt" src="https://mdt.noire.cloud"></iframe>
+    </div>
+
+    <div class="trading">
+        <iframe id="trading" src="https://trade.noire.cloud"></iframe>
+    </div>
+
+    <div class="wiki">
+        <iframe id="wiki" src="https://wiki.noire.cloud"></iframe>
+    </div>
+
+    <div class="stats casino">
+        <iframe id="casino" src="https://stats.noire.cloud/casino.html"></iframe>
+    </div>
+
+    <div class="stats doj">
+        <iframe id="doj" src="https://stats.noire.cloud/doj.html"></iframe>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+</body>

@@ -1,0 +1,2 @@
+I recommend to use bob74_ipl to load the GTA casino penthouse (its enabled by default with this version).
+https://github.com/Bob74/bob74_ipl/releases/tag/2.1.1

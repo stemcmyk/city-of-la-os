@@ -1,0 +1,80 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # #
+#    ___ _____  __  _    ___ ___   _   _____   __   #
+#   | __/ __\ \/ / | |  | __/ __| /_\ / __\ \ / /   #
+#   | _|\__ \>  <  | |__| _| (_ |/ _ \ (__ \ V /    #
+#   |___|___/_/\_\ |____|___\___/_/ \_\___| |_|     #
+#                                                   #
+#     Discord: http://discord.esx-framework.org/     #
+#     Website: https://esx-framework.org/           #
+#     CFG Docs: https://aka.cfx.re/server-commands  #
+# # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+
+# Editable Settings
+# -----------------
+# You can edit the following:
+
+endpoint_add_tcp "0.0.0.0:30120"
+endpoint_add_udp "0.0.0.0:30120"
+
+# Set Tags
+sets tags "default, deployer, esx, esx legacy, legacy, official, roleplay"
+
+# Optional Editable Settings
+# --------------------------
+# You may edit the following:
+
+sv_licenseKey "dma9hvc1ldjtj0ql3e01s8dm03436c1u"
+sv_hostname "big bonanza | ESX Legacy Server"
+sets sv_projectName " big bonanza | [ESX Legacy]"
+sets sv_projectDesc "The official recipe of the most popular FiveM RP framework, containing Jobs, Housing, Vehicles & more!"
+set mysql_connection_string "mysql://root@localhost/ESXLegacy_FE2DCD?charset=utf8mb4"
+load_server_icon esxLogo.png
+sv_maxclients 48
+
+# System Administrators
+# ---------------------
+# Add system admins
+
+add_principal group.admin group.user
+add_ace group.admin command allow # allow all commands
+add_ace group.admin command.quit deny # but don't allow quit
+add_ace resource.es_extended command.add_ace allow
+add_ace resource.es_extended command.add_principal allow
+add_ace resource.es_extended command.remove_principal allow
+add_ace resource.es_extended command.stop allow
+add_principal identifier.fivem:421489 group.admin #stemcmyk
+
+# pma-voice Config
+# ----------------
+setr voice_enableRadioAnim 1
+setr voice_useNativeAudio true
+setr voice_useSendingRangeOnly true
+
+# ESX Language (edit to change the language of ESX)
+# -----------------------------------------------------------
+setr esx:locale "en"
+
+# Default & Standalone Resources
+# ------------------------------
+ensure chat
+ensure spawnmanager
+ensure hardcap
+ensure oxmysql
+ensure bob74_ipl
+
+# ESX Legacy Core
+# ----------
+ensure [core]
+
+# ESX Addons
+# ----------
+ensure [standalone]
+ensure [esx_addons]
+
+ensure [ox]
+ensure fleeca_banking
+
+# Additional Resource
+# -------------------
+ensure pma-voice

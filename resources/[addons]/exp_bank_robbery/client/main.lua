@@ -1,0 +1,390 @@
+player = {}
+bank_to_vault = {}
+cashStacks = {}
+local bank = nil
+local canRetry = 2
+local isRobbing = false
+
+Citizen.CreateThread(function()
+    while not DoesEntityExist(PlayerPedId()) do Wait(100) end
+
+    TriggerServerCallback("exp_bank_robbery:GetBankRobbed", function(bank_robbed)
+        SetupBanks(bank_robbed)
+    end)
+end)
+
+local vh_to_bank = {}
+function SetupBanks(bank_robbed)
+    RequestModel(BANKS.pillbox.vault_hack.model)
+    while not HasModelLoaded(BANKS.pillbox.vault_hack.model) do Wait(100) end
+
+    for k, v in pairs(BANKS) do
+        local vault_hack = CreateObject(v.vault_hack.model, v.vault_hack.position, false, false, false)
+        SetEntityAsMissionEntity(vault_hack)
+        FreezeEntityPosition(vault_hack, true)
+        SetEntityRotation(vault_hack, v.vault_hack.rotation)
+        SetEntityInvincible(vault_hack, true)
+        vh_to_bank[vault_hack] = k
+        
+        AddDoorToSystem(GetHashKey("bank_robbery_"..k), v.door.model, v.door.position)
+
+        bank_to_vault[k] = CreateObject(v.vault_door.model, v.vault_door.position, false, false, false)
+        FreezeEntityPosition(bank_to_vault[k], true)
+        SetEntityRotation(bank_to_vault[k], 0.0, 0.0, bank_robbed == k and v.vault_door.reset_yaw-90 or v.vault_door.reset_yaw)
+        SetEntityInvincible(bank_to_vault[k], true)
+        SetEntityAsMissionEntity(bank_to_vault[k])
+
+        AddEntityMenuItem({
+            entity = vault_hack,
+            event = "exp_bank_robbery:StartVaultHack",
+            name = _("hack_vault_name"),
+            desc = _("hack_vault"),
+            icon = "fa-solid fa-laptop-code",
+            canInteract = function () 
+                return not isRobbing
+            end
+        })
+    end
+
+    if bank then
+        local door_hack = GetClosestObjectOfType(bank.door_hack.position, 1.0, bank.door_hack.model)
+        while bank and not DoesEntityExist(door_hack) do Wait(100)
+            door_hack = GetClosestObjectOfType(bank.door_hack.position, 1.0, bank.door_hack.model)
+        end
+        AddEntityMenuItem({
+            entity = door_hack,
+            event = "exp_bank_robbery:StartDoorHack",
+            name = _("hack_vault_name"),
+            desc = _("hack_vault"),
+            icon = "fa-solid fa-laptop-code",
+            canInteract = function () 
+                return not isRobbing
+            end
+        })
+    end
+end
+
+RegisterNetEvent("exp_bank_robbery:StartVaultHack")
+AddEventHandler("exp_bank_robbery:StartVaultHack", function(entity)
+    entity = type(entity) == "number" and entity or entity.entity
+
+    if HACK_ITEM then
+        TriggerServerCallback("exp_bank_robbery:HasItem", function(has_item)
+            if not has_item then return lib.notify({
+                description = "You are missing something",
+                type = "error"
+            }) end
+            
+            StartVaultHack(entity)
+        end, HACK_ITEM)
+    else
+        StartVaultHack(entity)
+    end
+end)
+
+function GetPlayerGender()
+    local gender = "Male"
+    if ESX.PlayerData.sex == "f" then
+        gender = "Female"
+    end
+    return gender
+end
+
+function GetStreetAndZone(coords)
+    local zone = GetLabelText(GetNameOfZone(coords.x, coords.y, coords.z))
+    local street = GetStreetNameFromHashKey(GetStreetNameAtCoord(coords.x, coords.y, coords.z))
+    return street .. ", " .. zone
+end
+
+
+function StartVaultHack(entity)
+    bank = BANKS[vh_to_bank[entity]]
+    bank.bank = vh_to_bank[entity]
+    if canRetry == 0 then return lib.notify({ description = "The system has locked down", type = "error" }) end
+    TriggerServerCallback("exp_bank_robbery:CanBeRobbed", function()
+        player.Ped = PlayerPedId()
+        
+        local coords = GetEntityCoords(cache.ped)
+
+        local dispatchData = {
+            message = "A bank robbery has begun",
+            codeName = 'bankrobbery',
+            code = '10-90',
+            icon = 'fas fa-vault',
+            priority = 2,
+            coords = coords,
+            gender = GetPlayerGender(),
+            street = GetStreetAndZone(coords),
+            alertTime = nil,
+            jobs = { 'lspd', "sahp", "lscso" }
+        }
+
+        TriggerServerEvent('ps-dispatch:server:notify', dispatchData)
+
+        isRobbing = true
+        local success = AnimateHacking(entity)
+        isRobbing = false
+        if success then
+            PrepareInside()
+            
+            TriggerServerEvent("exp_bank_robbery:OpenVaultDoor", bank.bank)
+            TriggerServerEvent("exp_bank_robbery:InitiateBankRobbery", bank.bank)
+            canRetry = 2
+        else
+            if canRetry == 2 then
+                canRetry = 1
+            else
+                canRetry = 0
+                TriggerServerEvent("exp_bank_robbery:InitiateBankRobbery", bank.bank)
+            end
+        end
+    end, bank.bank)
+end
+
+RegisterNetEvent("exp_bank_robbery:GrabCash")
+AddEventHandler("exp_bank_robbery:GrabCash", function(entity)
+    entity = type(entity) == "number" and entity or entity.entity
+    local id = type(entity) == "number" and 1 or entity.id
+    player.Ped = PlayerPedId()
+    if not DoesPedHaveAnyBag(player.Ped) then
+        ShowNotification({
+            title = _("no_bag_name"),
+            message = _("no_bag"),
+            type = "error"
+        })
+        return
+    end
+    local state, progres = AnimateGrabCash(entity, cashStacks[id])
+    TriggerServerEvent("exp_bank_robbery:GiveGrabbedCash", id, progres)
+end)
+
+function PrepareInside()
+    if (not bank) then return print("invalid bank") end
+    RequestModel(bank.first_cash.model)
+    RequestModel(bank.second_cash.model)
+    RequestModel(bank.third_cash.model)
+    RequestModel(bank.door_hack.model)
+    RequestModel(bank.door.model)
+    while not HasModelLoaded(bank.first_cash.model)
+        or not HasModelLoaded(bank.second_cash.model)
+        or not HasModelLoaded(bank.third_cash.model)
+        or not HasModelLoaded(bank.door_hack.model)
+        or not HasModelLoaded(bank.door.model) do Wait(100)
+    end
+    
+    -- FIRST CASH LOCATION
+
+    local old_first_cash = GetClosestObjectOfType(bank.first_cash.position, 1.0, bank.first_cash.model)
+    if DoesEntityExist(old_first_cash) then
+        NetworkRequestControlOfEntity(old_first_cash)
+        while not NetworkHasControlOfEntity(old_first_cash) do Wait(10) end
+        DeleteObject(old_first_cash)
+    end
+
+    local old_first_cash_empty = GetClosestObjectOfType(bank.first_cash.position, 1.0, GetHashKey("hei_prop_hei_cash_trolly_03"))
+    if DoesEntityExist(old_first_cash_empty) then
+        NetworkRequestControlOfEntity(old_first_cash_empty)
+        while not NetworkHasControlOfEntity(old_first_cash_empty) do Wait(10) end
+        DeleteObject(old_first_cash_empty)
+    end
+
+    local first_cash = CreateObject(bank.first_cash.model, bank.first_cash.position, true, true)
+    SetEntityRotation(first_cash, bank.first_cash.rotation)
+    FreezeEntityPosition(first_cash, true)
+    PlaceObjectOnGroundProperly(first_cash)
+
+    -- SECOND CASH LOCATION
+
+    local old_second_cash = GetClosestObjectOfType(bank.second_cash.position, 1.0, bank.second_cash.model)
+    if DoesEntityExist(old_second_cash) then
+        NetworkRequestControlOfEntity(old_second_cash)
+        while not NetworkHasControlOfEntity(old_second_cash) do Wait(10) end
+        DeleteObject(old_second_cash)
+    end
+
+    local old_second_cash_empty = GetClosestObjectOfType(bank.second_cash.position, 1.0, GetHashKey("hei_prop_hei_cash_trolly_03"))
+    if DoesEntityExist(old_second_cash_empty) then
+        NetworkRequestControlOfEntity(old_second_cash_empty)
+        while not NetworkHasControlOfEntity(old_second_cash_empty) do Wait(10) end
+        DeleteObject(old_second_cash_empty)
+    end
+
+    local second_cash = CreateObject(bank.second_cash.model, bank.second_cash.position, true, true)
+    SetEntityRotation(second_cash, bank.second_cash.rotation)
+    FreezeEntityPosition(second_cash, true)
+    PlaceObjectOnGroundProperly(second_cash)
+
+    -- THIRD CASH LOCATION
+
+    local old_third_cash = GetClosestObjectOfType(bank.third_cash.position, 1.0, bank.third_cash.model)
+    if DoesEntityExist(old_third_cash) then
+        NetworkRequestControlOfEntity(old_third_cash)
+        while not NetworkHasControlOfEntity(old_third_cash) do Wait(10) end
+        DeleteObject(old_third_cash)
+    end
+
+    local old_third_cash_empty = GetClosestObjectOfType(bank.third_cash.position, 1.0, GetHashKey("hei_prop_hei_cash_trolly_03"))
+    if DoesEntityExist(old_third_cash_empty) then
+        NetworkRequestControlOfEntity(old_third_cash_empty)
+        while not NetworkHasControlOfEntity(old_third_cash_empty) do Wait(10) end
+        DeleteObject(old_third_cash_empty)
+    end
+
+    local third_cash = CreateObject(bank.third_cash.model, bank.third_cash.position, true, true)
+    SetEntityRotation(third_cash, bank.third_cash.rotation)
+    FreezeEntityPosition(third_cash, true)
+    PlaceObjectOnGroundProperly(third_cash)
+
+    -- DOOR HACK LOCATION
+
+    local old_door_hack = GetClosestObjectOfType(bank.door_hack.position, 0.5, bank.door_hack.model)
+    if DoesEntityExist(old_door_hack) then
+        NetworkRequestControlOfEntity(old_door_hack)
+        while not NetworkHasControlOfEntity(old_door_hack) do Wait(10) end
+        DeleteObject(old_door_hack)
+    end
+
+    local door_hack = CreateObject(bank.door_hack.model, bank.door_hack.position, true, true)
+    SetEntityRotation(door_hack, bank.door_hack.rotation)
+    FreezeEntityPosition(door_hack, true)
+
+    TriggerServerEvent("exp_bank_robbery:LockDoor", bank.bank, true)
+end
+
+RegisterNetEvent("exp_bank_robbery:StartDoorHack")
+AddEventHandler("exp_bank_robbery:StartDoorHack", function(entity)
+    entity = type(entity) == "number" and entity or entity.entity
+    isRobbing = true
+    local success = AnimateHacking(entity)
+    isRobbing = false
+    if success then
+        TriggerServerEvent("exp_bank_robbery:LockDoor", bank.bank, false)
+    end
+end)
+
+function AddMoneyToBag()
+    player.MoneyBag = player.MoneyBag + MONEY_PER_STACK
+end
+
+RegisterNetEvent("exp_bank_robbery:LockDoor")
+AddEventHandler("exp_bank_robbery:LockDoor", function(bank_id, state)
+    print("lockdoorS")
+    DoorSystemSetDoorState(GetHashKey("bank_robbery_"..bank_id), state)
+    if state then
+        bank = BANKS[bank_id]
+        bank.bank = bank_id
+        local first_cash = GetClosestObjectOfType(bank.first_cash.position, 1.0, bank.first_cash.model)
+        while bank and not DoesEntityExist(first_cash) do Wait(100)
+            first_cash = GetClosestObjectOfType(bank.first_cash.position, 1.0, bank.first_cash.model)
+        end
+
+        AddEntityMenuItem({
+            entity = first_cash,
+            event = "exp_bank_robbery:GrabCash",
+            name = _("grab_cash_name"),
+            desc = _("grab_cash"),
+            id = 1,
+            icon = "fa-solid fa-sack-dollar",
+            canInteract = function () 
+                return not isRobbing
+            end
+        })
+
+        local second_cash = GetClosestObjectOfType(bank.second_cash.position, 1.0, bank.second_cash.model)
+        while bank and not DoesEntityExist(second_cash) do Wait(100)
+            second_cash = GetClosestObjectOfType(bank.second_cash.position, 1.0, bank.second_cash.model)
+        end
+        AddEntityMenuItem({
+            entity = second_cash,
+            event = "exp_bank_robbery:GrabCash",
+            name = _("grab_cash_name"),
+            desc = _("grab_cash"),
+            id = 2,
+            icon = "fa-solid fa-sack-dollar",
+            canInteract = function () 
+                return not isRobbing
+            end
+        })
+
+        local third_cash = GetClosestObjectOfType(bank.third_cash.position, 1.0, bank.third_cash.model)
+        while bank and not DoesEntityExist(third_cash) do Wait(100)
+            third_cash = GetClosestObjectOfType(bank.third_cash.position, 1.0, bank.third_cash.model)
+        end
+
+        AddEntityMenuItem({
+            entity = third_cash,
+            event = "exp_bank_robbery:GrabCash",
+            name = _("grab_cash_name"),
+            desc = _("grab_cash"),
+            id = 3,
+            icon = "fa-solid fa-sack-dollar",
+            canInteract = function () 
+                return not isRobbing
+            end
+        })
+
+        local door_hack = GetClosestObjectOfType(bank.door_hack.position, 1.0, bank.door_hack.model)
+        while bank and not DoesEntityExist(door_hack) do Wait(100)
+            door_hack = GetClosestObjectOfType(bank.door_hack.position, 1.0, bank.door_hack.model)
+        end
+
+        AddEntityMenuItem({
+            entity = door_hack,
+            event = "exp_bank_robbery:StartDoorHack",
+            name = _("hack_vault_name"),
+            desc = _("hack_vault"),
+            icon = "fa-solid fa-laptop-code",
+            canInteract = function () 
+                return not isRobbing
+            end
+        })
+
+        if GetResourceState("exp_target_menu") == "started" then
+            exports.exp_target_menu:SetModelOffset({
+                model = bank.first_cash.model,
+                offset = vector3(0.0, 0.0, 0.5)
+            })
+        end
+    end
+end)
+
+RegisterNetEvent("exp_bank_robbery:OpenVaultDoor")
+AddEventHandler("exp_bank_robbery:OpenVaultDoor", function(bank_id, newCashStacks)
+    cashStacks = newCashStacks
+    for i = 1, 90, 0.2 do
+        SetEntityRotation(bank_to_vault[bank_id], 0.0, 0.0, BANKS[bank_id].vault_door.reset_yaw-i)
+        Wait(10)
+    end
+end)
+
+RegisterNetEvent("exp_bank_robbery:CloseVaultDoor")
+AddEventHandler("exp_bank_robbery:CloseVaultDoor", function(bank_id)
+    SetEntityRotation(bank_to_vault[bank_id], 0.0, 0.0, BANKS[bank_id].vault_door.reset_yaw)
+    bank = nil
+    canRetry = 2
+end)
+
+RegisterNetEvent("exp_bank_robbery:ShowPoliceAlert")
+AddEventHandler("exp_bank_robbery:ShowPoliceAlert", function(position)
+    local blip_icon = SetBlip(_("alert_title"), position, POL_ALERT_SPRITE, POL_ALERT_COLOR, 1.0)
+    SetBlipAsShortRange(blip_icon, false)
+    if POL_ALERT_WAVE then
+        local blip_wave = SetBlip("", position, 161, POL_ALERT_COLOR, 1.0)
+        SetBlipDisplay(blip_wave, 8)
+        SetBlipAsShortRange(blip_wave, false)
+    end
+
+    Wait(POL_ALERT_TIME)
+    
+    RemoveBlip(blip_icon)
+    RemoveBlip(blip_wave)
+    ShowNotification({
+        title = _("alert_title"),
+        message = _("alert_content")
+    })
+end)
+
+RegisterNetEvent("exp_bank_robbery:ShowNotification")
+AddEventHandler("exp_bank_robbery:ShowNotification", function(data)
+    ShowNotification(data)
+end)

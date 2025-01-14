@@ -1,0 +1,270 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* prettier-ignore */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-decoration: none;
+    /* font-family: inherit; */
+}
+/* HTML5 display-role reset for older browsers */
+/* prettier-ignore */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button  {
+    cursor: pointer;
+    border: none;
+    color: inherit;
+    text-align: left;
+    background-color: inherit;
+}
+
+/**
+  ****************
+  * END CSS RESET
+  ****************
+**/
+
+
+/* .menu{
+    display: none;
+} */
+*{
+    box-sizing: border-box;
+    /* --menu-scale: 0.6; */
+}
+
+html,body{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
+    user-select: none;
+}
+
+:root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+}
+
+.dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9;
+}
+/* 
+.menu-iframe{
+    border-radius: 8px;
+    position: relative;
+    transform: scale(var(--menu-scale));
+    width: calc(1/var(--menu-scale) * 100%);
+    height: calc(1/var(--menu-scale) * 100%);
+    transform-origin: top left;
+} */
+.menu-container {
+    display: none;
+    /* border: red solid 1px; */
+
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80vh;
+    max-width: 90vw;
+    aspect-ratio: 16/9;
+    background-color: hsl(var(--background));
+    border:hsl(var(--border)) solid 1px;
+    border-radius: 8px;
+}
+
+.menu{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-bg{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    width: 25%;
+    /* border-width: ; */
+
+    background-color: hsl(var(--muted) / 0.4); 
+    border-right: hsl(var(--border)) solid 1px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.2rem;  */
+}
+.navbar-logo{
+    padding: 0.6rem;
+
+    border-bottom: hsl(var(--border)) 1px solid ;
+    width: 100%;
+    /* height: auto; */
+    position: relative;
+}
+.navbar-items{
+    padding: 0.6rem;
+}
+.navbar-item {
+    /* pad: 1rem; */
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    /* justify-content: center; */
+    gap: 0.8rem;
+    /* margin-left: 1rem; */
+    /* font-size: 1.0rem; */
+    padding: 0.6rem;
+    transition-duration: 200ms;
+    color: hsl(var(--muted-foreground));  
+}
+.navbar-item:hover {
+    color: hsl(var(--secondary-foreground));  
+}
+
+
+.pages{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* background-color: red; */
+}
+
+.page{
+    width: 100%;
+    height: 100%;
+    display: hidden;
+    position: absolute;
+    transition-duration: 200ms;
+    opacity: 0;
+    z-index: -1;
+    padding: 1rem;
+}
+
+.page:target{
+    z-index: 1;
+    opacity: 1;
+    
+}
+.close-btn{
+    z-index: 999;
+    cursor: pointer;
+    position: absolute;
+    color: hsl(var(--muted-foreground));
+    /* height: 2px;
+    width: 4px; */
+    top: 1rem;
+    right: 1rem;
+}
+
+button{
+    background-color: hsl(var(--card));
+    border: hsl(var(--border)) solid 1px;
+    border-radius: 8px;
+    padding: 0.6rem;
+    color: hsl(var(--card-foreground));
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    transition-duration: 200ms;
+}
+button:hover{
+    background-color: hsl(var(--secondary));
+    /* color: hsl(var(--primary-foreground)); */
+}
+
+input{
+    background-color: hsl(var(--card));
+    border: hsl(var(--border)) solid 1px;
+    border-radius: 8px;
+    padding: 0.6rem;
+    color: hsl(var(--card-foreground));
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+}
+
+.header{
+    font-size: 1.2rem;
+    padding-bottom: 0.6rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    padding-top: 1.0rem;
+}

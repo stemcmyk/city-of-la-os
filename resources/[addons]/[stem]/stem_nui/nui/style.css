@@ -1,0 +1,144 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.vehicle_recall {
+    margin: auto;
+    width: 80%;
+    max-width: 960px;
+    padding: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: none;
+    background-color: white;
+}
+
+.vehicle_recall h1, h2, h3 {
+    text-align: center;
+}
+
+.vehicle_recall h1 {
+    color: red;
+    text-shadow: 1px 1px black;
+}
+
+.vehicle_recall h4 {
+    text-decoration: underline;
+}
+
+.vehicle_list table, th, td {
+    border: 1px solid black;
+}
+
+.vehicle_list th, td {
+    text-align: center;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.disclaimer {
+    font-size: small;
+}
+
+.comserv_notice {
+    margin: auto;
+    width: 80%;
+    max-width: 960px;
+    padding: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: none;
+    background-color: white;
+}
+
+.comserv_notice h1, h2, h3 {
+    text-align: center;
+}
+
+.comserv_notice h1 {
+    color: red;
+    text-shadow: 1px 1px black;
+}
+
+.comserv_notice h4 {
+    text-decoration: underline;
+}
+
+.wnews_publish {
+    margin: auto;
+    width: 80%;
+    max-width: 960px;
+    padding: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: none;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.wnews_publish input {
+    width: 80%;
+    border: 5px;
+    margin: 5px;
+}
+
+.mdt {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.mdt iframe {
+    width: 90%;
+    height: 90vh;
+    opacity: 0.99;
+    border: none;
+    /* remove iframe border */
+}
+
+.trading {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.trading iframe {
+    width: 90%;
+    height: 90vh;
+    opacity: 0.99;
+    border: none;
+    /* remove iframe border */
+}
+
+.wiki {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wiki iframe {
+    width: 90%;
+    height: 90vh;
+    opacity: 0.99;
+    border: none;
+    /* remove iframe border */
+}
+
+.stats {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.stats iframe {
+    width: 90%;
+    height: 90vh;
+    opacity: 0.99;
+    border: none;
+    /* remove iframe border */
+}
