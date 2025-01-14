@@ -24,7 +24,7 @@ sets tags "default, deployer, esx, esx legacy, legacy, official, roleplay"
 # --------------------------
 # You may edit the following:
 
-sv_licenseKey "dma9hvc1ldjtj0ql3e01s8dm03436c1u"
+sv_licenseKey ""
 sv_hostname "big bonanza | ESX Legacy Server"
 sets sv_projectName " big bonanza | [ESX Legacy]"
 sets sv_projectDesc "The official recipe of the most popular FiveM RP framework, containing Jobs, Housing, Vehicles & more!"
