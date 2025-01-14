@@ -9,7 +9,7 @@
 - Wasabi Carlock (Not Required)
 - Wasabi Bridge (Required)
 - [Cosmo Driveby](https://forum.cfx.re/t/paid-enhanced-driveby-animations-v1-1-custom-clipsets-2-0-teaser-out-now/4880157) (Not Required)
-- [K4MB1 Casino] (https://www.k4mb1maps.com/product/5325085)
+- [K4MB1 Casino](https://www.k4mb1maps.com/product/5325085) (Required for casino)
 
 ## Setup
 
