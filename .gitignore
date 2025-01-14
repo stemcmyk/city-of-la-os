@@ -5,7 +5,6 @@ resources/\[esx_addons\]/esx_property/properties.json
 
 /txData/*/data
 /txData/*/logs
-local.server.cfg
 /resources/\[assets\]/noire_vehicles
 resources/\[esx_addons\]/esx_property/properties.json
 resources/\[addons\]/\[npwd\]/npwd/sv_npwd.log
