@@ -18,7 +18,7 @@ This is a guide for Windows any other system you gotta figure out yourself
 1. Download the latest server build files using `https://runtime.fivem.net/artifacts/fivem/build_server_windows/master/`
 2. Un-zip it and you should have a folder containing a FXServer.exe
 3. In this folder create another folder called "servers" and open it
-4. Install Git LFS [git-lfs](https://git-lfs.com/)
+4. Install Git LFS [git-lfs](https://git-lfs.com/) (Used for for the larger files)
 5. Clone this repository in that folder
    You can do this by running `git clone https://github.com/city-of-la/city-of-la-server-files.git` if you have [git](https://git-scm.com/) installed
 6. Run the ./start.bat file in the folder that was cloned
